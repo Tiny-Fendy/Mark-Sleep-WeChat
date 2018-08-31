@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text class="userInfo-nickname">你好，{{userInfo.nickName}}</text>
+  </view>
+  <view class="body">
+    <button
+      wx:if="{{!hasUserInfo && canIUse}}"
+      open-type="getUserInfo"
+      bindgetuserinfo="getUserInfo"
+    >
+      获取头像昵称
+    </button>
+    <block wx:else>
+      <button
+        wx:click="mark"
+        class="mark-time {{markDisabled}}"
+        disabled="{{markDisabled}}">
+        睡觉
+      </button>
+      <text class="tips">点击记录今天的睡觉时间</text>
+    </block>
+  </view>
+  <view class="greeting">
+    <text>夜深人静了，要早点休息喔。</text>
+  </view>
+</view>

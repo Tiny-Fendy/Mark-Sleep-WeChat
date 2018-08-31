@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "睡眠时间点记录",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#2ab70c",
+    "list": [{
+      "pagePath":"pages/index/index",
+      "text": "睡觉打卡"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "查看记录"
+    }]
+  }
+}
